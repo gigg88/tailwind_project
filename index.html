@@ -4,29 +4,106 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+     <!-- Leaflet -->
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+
     <title>Vite App</title>
   </head>
   <body>
      
     <section>
-      <div class="container">
+      <div class="container mx-auto px-4">
+        <div>
         <h1 class="font-bold underline">Traena in Norway</h1>
         <h2 class="mb-5">Second Day on the Svalbard Line</h2>
       </div>
       <div class="mb-5">
-        <img src="./src/images/Traena/Norway_Treana-002.jpg" alt="Image of Traena" class="w-full h-auto" />
-      </div>
-      <div>
-        <h3 class="font-bold mb-2">A short history of Traena</h3>
+        <div class="">
+          <picture>
+              <source srcset="./src/images/Traena/Norway_Treana-085.jpg"
+                  media="(max-width: 568px)" />
+              <source srcset="./src/images/Traena/Norway_Treana-080.jpg"
+                  media="(max-width: 1200px)" />
+              <img class="w-full h-auto" src="./src/images/Traena/Norway_Treana-080.jpg"
+              alt="Image of Traena" />
+          </picture>
+        </div>  
+        <div>
+        <h3 class="font-bold mb-2 mt-5">A short history of Traena</h3>
         <p class="mb-2">Home to one of Norway’s oldest fishing villages, Træna’s year-round resident population has barely changed since the Stone Age, growing from around 250 people to just 500 today. These permanent residents live on the four main islands – Husøya, where the majority of people live, Selvær, Sanna, and Sandøy.
         </p>
         <p>The deep, cold waters that surround the archipelago are rich with different species of fish throughout the year. It’s long been known that Træna’s rocky islands, with their sheltered inlets, are the ideal base for fishing boats.
         </p>
           
       </div>
+    </div>
     </section>
+
+    <div class="container mx-auto px-4"> 
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+        <div>
+          <img class="object-cover object-center w-full h-150 max-w-full rounded-lg"
+            src="./src/images/Traena/Norway_Treana-013.jpg"
+            alt="gallery-photo" />
+        </div>
+        <div>
+          <img class="object-cover object-center w-full h-150 max-w-full rounded-lg"
+            src="./src/images/Traena/Norway_Treana-033.jpg"
+            alt="gallery-photo" />
+        </div>
+        <div>
+          <img class="object-cover object-center w-full h-150 max-w-full rounded-lg"
+            src="./src/images/Traena/Norway_Treana-058.jpg"
+            alt="gallery-photo" />
+        </div>
+        <div>
+          <img class="object-cover object-center w-full h-150 max-w-full rounded-lg"
+            src="./src/images/Traena/Norway_Treana-065.jpg"
+            alt="gallery-photo" />
+        </div>
+        <div>
+          <img class="object-cover object-center w-full h-150 max-w-full rounded-lg"
+            src="./src/images/Traena/Norway_Treana-069.jpg"
+            alt="gallery-photo" />
+        </div>
+        <div>
+          <img class="object-cover object-center w-full h-150 max-w-full rounded-lg"
+            src="./src/images/Traena/Norway_Treana-080.jpg"
+            alt="gallery-photo" />
+        </div>
+        <div>
+          <img class="object-cover object-center w-full h-150 max-w-full rounded-lg"
+            src="./src/images/Traena/Norway_Treana-085.jpg"
+            alt="gallery-photo" />
+        </div>
+        <div>
+          <img class="object-cover object-center w-full h-150 max-w-full rounded-lg"
+            src="./src/images/Traena/Norway_Treana-111.jpg"
+            alt="gallery-photo" />
+        </div>
+        <div>
+          <img class="object-cover object-center w-full h-150 max-w-full rounded-lg"
+            src="./src/images/Traena/Norway_Treana-113.jpg"
+            alt="gallery-photo" />
+        </div>
+      </div>
+    </div>
+
+    <section class="map_section">
+      <div class="container mx-auto px-4 mt-5 mb-5">
+        <div id="map"></div>
+      </div>
+      
+   </section>
     
     
     <script type="module" src="/src/main.js"></script>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <script src="./src/js/map.js"></script>
   </body>
 </html>
