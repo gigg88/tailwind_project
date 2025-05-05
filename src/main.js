@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick.min.js'; // This might not be strictly necess
 
 $(function() {
   $('.your-class').slick({
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
     arrows: true,
